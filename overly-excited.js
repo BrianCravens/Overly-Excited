@@ -6,9 +6,8 @@ let sentence = ["The","walrus","danced","through","the","trees","in","the","ligh
     the array as the sole argument. It should iterate over the array
     and output the words to the browser console.
 */
-function addExcitement (theWordArray,punctuation,multi) {
+let arrowFunction = (theWordArray,punctuation,multi) => {
 
-    // Each time the for loop executes, you're going to add one more word to this string
     let buildMeUp = ""
     let wordCount = 1;
 
@@ -27,4 +26,29 @@ function addExcitement (theWordArray,punctuation,multi) {
 }
 
 // Invoke the function and pass in the array
-addExcitement(sentence, "!", 4)
+arrowFunction(sentence, "!", 4)
+
+
+
+// function addExcitement (theWordArray,punctuation,multi) {
+
+//     // Each time the for loop executes, you're going to add one more word to this string
+//     let buildMeUp = ""
+//     let wordCount = 1;
+
+//     for (let i = 0; i < theWordArray.length; i++) {
+//         if (wordCount % 3 === 0){
+//             buildMeUp += " " +theWordArray[i]+punctuation.repeat(multi)
+//             wordCount++;
+//         }
+//         else{
+//         buildMeUp += " " +theWordArray[i]
+//         wordCount++;        
+//         }
+//         console.log(buildMeUp);
+//     }
+
+// }
+
+// // Invoke the function and pass in the array
+// addExcitement(sentence, "!", 4)
